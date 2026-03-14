@@ -1,0 +1,45 @@
+
+============================================================
+1) ROW-BASED SVM (train/val split by file)
+============================================================
+Row-level accuracy: 0.7206
+Confusion matrix (rows):
+              pred_hard  pred_grass
+true_hard          22056        3202
+true_grass         15615       26480
+
+Classification report (rows):
+              precision    recall  f1-score   support
+
+ hard_ground       0.89      0.63      0.74     42095
+       grass       0.59      0.87      0.70     25258
+
+    accuracy                           0.72     67353
+   macro avg       0.74      0.75      0.72     67353
+weighted avg       0.78      0.72      0.72     67353
+
+
+File-level (majority vote) accuracy: 1.0000
+Confusion matrix (files):
+              pred_hard  pred_grass
+true_hard              3           0
+true_grass             0           5
+
+============================================================
+2) FILE-SUMMARY FEATURES (one sample per file)
+============================================================
+Accuracy: 0.8750
+Confusion matrix (files):
+              pred_hard  pred_grass
+true_hard              3           1
+true_grass             0           4
+
+Classification report (files):
+              precision    recall  f1-score   support
+
+ hard_ground       0.80      1.00      0.89         4
+       grass       1.00      0.75      0.86         4
+
+    accuracy                           0.88         8
+   macro avg       0.90      0.88      0.87         8
+weighted avg       0.90      0.88      0.87         8

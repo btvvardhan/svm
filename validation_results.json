@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-03-14T16:22:49.782850",
+  "model_paths": {
+    "row_based": "/home/btvv/svm/svm_row_based.joblib",
+    "file_summary": "/home/btvv/svm/svm_file_summary.joblib"
+  },
+  "row_based": {
+    "row_level_accuracy": 0.7206212046976378,
+    "confusion_matrix_rows": [
+      [
+        22056,
+        3202
+      ],
+      [
+        15615,
+        26480
+      ]
+    ],
+    "file_level_accuracy": 1.0,
+    "confusion_matrix_files": [
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        5
+      ]
+    ],
+    "classification_report": "              precision    recall  f1-score   support\n\n hard_ground       0.89      0.63      0.74     42095\n       grass       0.59      0.87      0.70     25258\n\n    accuracy                           0.72     67353\n   macro avg       0.74      0.75      0.72     67353\nweighted avg       0.78      0.72      0.72     67353\n"
+  },
+  "file_summary": {
+    "accuracy": 0.875,
+    "confusion_matrix": [
+      [
+        3,
+        1
+      ],
+      [
+        0,
+        4
+      ]
+    ],
+    "classification_report": "              precision    recall  f1-score   support\n\n hard_ground       0.80      1.00      0.89         4\n       grass       1.00      0.75      0.86         4\n\n    accuracy                           0.88         8\n   macro avg       0.90      0.88      0.87         8\nweighted avg       0.90      0.88      0.87         8\n"
+  }
+}
